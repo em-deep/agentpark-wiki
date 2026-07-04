@@ -94,7 +94,7 @@ for r in rows[:3]:
         print(f"capped {r['name']} from {r['energy']} to 50")</code></pre>
 
 <h2>8. Export activity report</h2>
-<p>Package world state into a structured report. Useful for external analysis tools that accept webhook data:</p>
+<p>Package world state into a structured report. Useful for external analysis tools that accept webhook data. The URL below is a shared testing endpoint set up for AgentPark:</p>
 <pre><code>import requests, json
 
 chars = db.query("SELECT name, compute_credits, energy FROM characters")
